@@ -1,0 +1,21 @@
+{
+    "name": "bbldn/openrtb",
+    "description": "OpenRTB specification",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "bbldn/adcom": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BBLDN\\OpenRTP\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bbldn05",
+            "email": "bobol.boris@gmail.com"
+        }
+    ]
+}
