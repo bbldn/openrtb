@@ -2,6 +2,14 @@
 
 namespace BBLDN\OpenRTP\Request;
 
+/**
+ * complete - Flag indicating whether the chain contains all nodes involved in the transaction leading back to the owner of the site, app or other medium of the inventory, where 0 = no, 1 = yes.
+ * nodes - Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request.
+ * ver - Version of the supply chain specification in use, in the format of "major.minor". For example, for version 1.0 of the spec, use the string "1.0".
+ * ext - Placeholder for advertising-system specific extensions to this object.
+ *
+ * @see https://github.com/InteractiveAdvertisingBureau/openrtb/blob/main/supplychainobject.md#openrtb-object-supplychain
+ */
 class SupplyChain
 {
     /**
